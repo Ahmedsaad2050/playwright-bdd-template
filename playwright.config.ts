@@ -12,12 +12,14 @@ const testDir = defineBddConfig({
  * BDD test files are generated from `.feature` files into `.features-gen/`
  * by `playwright-bdd` and then executed by Playwright as regular specs.
  */
+const isCI = !!process.env['CI'];
+
 export default defineConfig({
   testDir,
   fullyParallel: true,
-  forbidOnly: !!process.env['CI'],
-  retries: process.env['CI'] ? 2 : 0,
-  workers: process.env['CI'] ? 2 : undefined,
+  forbidOnly: isCI,
+  retries: isCI ? 2 : 0,
+  ...(isCI ? { workers: 2 } : {}),
   timeout: 60_000,
   expect: {
     timeout: 10_000,
