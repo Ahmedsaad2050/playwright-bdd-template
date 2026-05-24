@@ -11,15 +11,15 @@ Demo target: [automationexercise.com](https://automationexercise.com).
 
 ## Stack
 
-| Layer | Choice |
-|---|---|
-| Test runner | [Playwright](https://playwright.dev) |
-| BDD layer | [playwright-bdd](https://github.com/vitalets/playwright-bdd) (Cucumber for Playwright) |
-| Language | TypeScript with `strict` + `noUncheckedIndexedAccess` + `exactOptionalPropertyTypes` |
-| Data | [@faker-js/faker](https://fakerjs.dev/) |
-| Lint | ESLint flat config with `typescript-eslint` type-checked rules + `eslint-plugin-playwright` |
-| Format | Prettier |
-| CI | GitHub Actions |
+| Layer       | Choice                                                                                      |
+| ----------- | ------------------------------------------------------------------------------------------- |
+| Test runner | [Playwright](https://playwright.dev)                                                        |
+| BDD layer   | [playwright-bdd](https://github.com/vitalets/playwright-bdd) (Cucumber for Playwright)      |
+| Language    | TypeScript with `strict` + `noUncheckedIndexedAccess` + `exactOptionalPropertyTypes`        |
+| Data        | [@faker-js/faker](https://fakerjs.dev/)                                                     |
+| Lint        | ESLint flat config with `typescript-eslint` type-checked rules + `eslint-plugin-playwright` |
+| Format      | Prettier                                                                                    |
+| CI          | GitHub Actions                                                                              |
 
 ---
 
@@ -117,18 +117,18 @@ The rules this template enforces — and why each one is there:
 
 ## Available scripts
 
-| Script | What it does |
-|---|---|
-| `npm test` | Generate BDD specs, then run all tests |
-| `npm run test:headed` | Same, with browser visible |
-| `npm run test:ui` | Open the Playwright UI mode |
-| `npm run report` | Open the HTML report from the last run |
-| `npm run bdd:gen` | Regenerate specs without running |
-| `npm run lint` | ESLint (type-checked rules) |
-| `npm run lint:fix` | ESLint with autofix |
-| `npm run format` | Prettier write |
-| `npm run format:check` | Prettier check (used in CI) |
-| `npm run typecheck` | `tsc --noEmit` |
+| Script                 | What it does                           |
+| ---------------------- | -------------------------------------- |
+| `npm test`             | Generate BDD specs, then run all tests |
+| `npm run test:headed`  | Same, with browser visible             |
+| `npm run test:ui`      | Open the Playwright UI mode            |
+| `npm run report`       | Open the HTML report from the last run |
+| `npm run bdd:gen`      | Regenerate specs without running       |
+| `npm run lint`         | ESLint (type-checked rules)            |
+| `npm run lint:fix`     | ESLint with autofix                    |
+| `npm run format`       | Prettier write                         |
+| `npm run format:check` | Prettier check (used in CI)            |
+| `npm run typecheck`    | `tsc --noEmit`                         |
 
 ---
 
