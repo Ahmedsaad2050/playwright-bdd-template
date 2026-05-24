@@ -1,0 +1,46 @@
+{
+  "name": "playwright-bdd-template",
+  "version": "1.0.0",
+  "description": "Reusable Playwright + BDD (Cucumber) test framework with strict Page Object Model. Demo target: automationexercise.com.",
+  "scripts": {
+    "test": "bddgen && playwright test",
+    "bdd:gen": "bddgen",
+    "test:headed": "bddgen && playwright test --headed",
+    "test:ui": "bddgen && playwright test --ui",
+    "report": "playwright show-report",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "bdd",
+    "cucumber",
+    "page-object-model",
+    "e2e-testing",
+    "typescript",
+    "test-automation",
+    "template"
+  ],
+  "author": "Ahmed Elatawy",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.10.4",
+    "playwright-bdd": "^8.5.1",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedsaad2050/playwright-bdd-template.git"
+  }
+}
